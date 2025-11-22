@@ -1,0 +1,52 @@
+body {
+  background: #222;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+  margin-top: 30px;
+}
+
+.lantern {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  perspective: 1200px;
+}
+
+.cube {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 6s linear infinite;
+}
+
+.face {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  transform-origin: center center;
+  border: 2px solid #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+.face img {
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover;
+  display: block;
+}
+
+.f1 { transform: rotateY(0deg) translateZ(150px); }
+.f2 { transform: rotateY(60deg) translateZ(150px); }
+.f3 { transform: rotateY(120deg) translateZ(150px); }
+.f4 { transform: rotateY(180deg) translateZ(150px); }
+.f5 { transform: rotateY(240deg) translateZ(150px); }
+.f6 { transform: rotateY(300deg) translateZ(150px); }
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
