@@ -2,28 +2,51 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Đèn Kéo Quân 3D</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đèn Kéo Quân Trung Thu</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-<h1>Đèn Kéo Quân 3D</h1>
-<p>Di chuột vào để dừng – Rê ra để quay tiếp</p>
+<body class="bg-gray-100 flex items-center justify-center">
 
-<div class="lantern">
-    <div class="cube" id="cube">
-
-        <div class="face f1"><img src="2.png"></div>
-        <div class="face f2"><img src="3.jpg"></div>
-        <div class="face f3"><img src="4.png"></div>
-        <div class="face f4"><img src="5.jpg"></div>
-        <div class="face f5"><img src="Avatar.png"></div> 
-        <div class="face f6"><img src="6.jpg"></div>
-
+    <div class="title-card">
+        <h1>Đèn Kéo Quân Trung Thu</h1>
+        <p>Rê chuột vào đèn để dừng, rê ra để quay tiếp!</p>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <div class="scene">
+        <div id="lantern" class="lantern-container">
+            
+            <div class="lantern-face face-1">
+                <img src="images/Avatar.png" alt="Chân dung của bạn">
+            </div>
 
+            <div class="lantern-face face-2">
+                <img src="https://placehold.co/300x300/a0522d/ffffff?text=Ông+Trăng" alt="Ông Trăng">
+            </div>
+
+            <div class="lantern-face face-3">
+                <img src="https://placehold.co/300x300/ff7f50/ffffff?text=Chú+Cuội" alt="Chú Cuội">
+            </div>
+
+            <div class="lantern-face face-4">
+                <img src="https://placehold.co/300x300/4682b4/ffffff?text=Chị+Hằng" alt="Chị Hằng">
+            </div>
+
+            <div class="lantern-face face-5">
+                <img src="https://placehold.co/300x300/3cb371/ffffff?text=Múa+Lân" alt="Múa Lân">
+            </div>
+            
+            <div class="lantern-face face-6">
+                <img src="https://placehold.co/300x300/8a2be2/ffffff?text=Lồng+Đèn" alt="Lồng Đèn">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
