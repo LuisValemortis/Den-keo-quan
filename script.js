@@ -1,11 +1,15 @@
-const cube = document.getElementById('cube');
+const lantern = document.getElementById('lantern');
 
-document.querySelectorAll('.face').forEach(face => {
-    face.addEventListener('mouseenter', () => {
-        cube.style.animationPlayState = 'paused';
-    });
-
-    face.addEventListener('mouseleave', () => {
-        cube.style.animationPlayState = 'running';
-    });
+lantern.addEventListener('mouseover', () => {
+    lantern.classList.add('paused');
+    lantern.classList.remove('running');
 });
+
+lantern.addEventListener('mouseout', () => {
+    lantern.classList.remove('paused');
+    lantern.classList.add('running');
+});
+
+window.onload = () => {
+    lantern.classList.add('running');
+};
